@@ -15,14 +15,14 @@ body {
 }
 
 a {
-  color: #70b200;
+  color: #fff;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 
 a:hover,
 a:focus {
-  color: #86d204;
+  color: #fff;
 }
 
 hr {
@@ -80,7 +80,7 @@ section h2 {
 
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus {
-  color: #86d204;
+  color: #fff;
 }
 
 #mainNav .navbar-brand .logo {
@@ -90,7 +90,7 @@ section h2 {
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
-  color: #222222;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li > a {
@@ -101,7 +101,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #70b200 !important;
+  color: #fff !important;
   background-color: transparent;
 }
 
@@ -111,12 +111,12 @@ section h2 {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #222222;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #86d204;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -152,7 +152,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #222222;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
@@ -407,7 +407,7 @@ footer {
   padding: 25px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  background-color: #111;
 }
 
 footer p {
@@ -440,7 +440,7 @@ footer ul li a.active {
     from(#68a800),
     to(#24a125)
   );
-  background: linear-gradient(#555555, #222222);
+  background: linear-gradient(#444, #111);
 }
 
 .text-primary {
