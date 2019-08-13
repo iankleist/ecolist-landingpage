@@ -15,13 +15,14 @@ body {
 }
 
 a {
-  color: #70B200;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  color: #70b200;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
-a:hover, a:focus {
-  color: #86D204;
+a:hover,
+a:focus {
+  color: #86d204;
 }
 
 hr {
@@ -62,9 +63,9 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  background-color: #3b994e;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -77,8 +78,13 @@ section h2 {
   letter-spacing: 1px;
 }
 
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #86D204;
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+  color: #86d204;
+}
+
+#mainNav .navbar-brand .logo {
+  width: 80%;
 }
 
 #mainNav .navbar-toggler {
@@ -95,7 +101,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #70B200 !important;
+  color: #70b200 !important;
   background-color: transparent;
 }
 
@@ -110,7 +116,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #86D204;
+  color: #86d204;
 }
 
 @media (min-width: 992px) {
@@ -121,7 +127,8 @@ section h2 {
   #mainNav .navbar-brand {
     color: fade(white, 70%);
   }
-  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  #mainNav .navbar-brand:hover,
+  #mainNav .navbar-brand:focus {
     color: white;
   }
   #mainNav .navbar-nav > li > a,
@@ -134,13 +141,14 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    background-color: #0b5d1e;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;
   }
-  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #86D204;
+  #mainNav.navbar-shrink .navbar-brand:hover,
+  #mainNav.navbar-shrink .navbar-brand:focus {
+    color: #86d204;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -148,7 +156,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #86D204;
+    color: #86d204;
   }
 }
 
@@ -158,9 +166,11 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #272838;
-  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#272838), to(#385f71));
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #272838, #385f71);
+  background: url('../img/bg-pattern.png'), #272838;
+  background: url('../img/bg-pattern.png'),
+    -webkit-gradient(linear, right top, left top, from(#272838), to(#3b994e));
+  background: url('../img/bg-pattern.png'),
+    linear-gradient(to left, #272838, #3b994e);
 }
 
 header.masthead .header-content {
@@ -280,7 +290,13 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#7b4397),
+    to(#dc2430)
+  );
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -289,7 +305,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
+  background-image: url('../img/bg-cta.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -324,6 +340,8 @@ section.cta .overlay {
 
 section.contact {
   text-align: center;
+  background-position: 0% 185%;
+  color: white;
 }
 
 section.contact h2 {
@@ -373,6 +391,18 @@ section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 
+section.contact #ycombinator-logo {
+  width: 200px;
+}
+
+section.contact .mail {
+  padding-bottom: 50px;
+}
+
+section.contact .startupschool h2 {
+  margin-bottom: 5px;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -394,14 +424,23 @@ footer ul li a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active {
   text-decoration: none;
 }
 
 .bg-primary {
-  background: #79BF00;
-  background: -webkit-gradient(linear, left top, left bottom, from(#68A800), to(#24A125));
-  background: linear-gradient(#68A800, #24A125);
+  background: #79bf00;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#68a800),
+    to(#24a125)
+  );
+  background: linear-gradient(#555555, #222222);
 }
 
 .text-primary {
@@ -419,10 +458,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-color: white;
 }
 
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
   color: white;
-  border-color: #70B200;
-  background-color: #70B200;
+  border-color: #70b200;
+  background-color: #70b200;
 }
 
 .btn {
